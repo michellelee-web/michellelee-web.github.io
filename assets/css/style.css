@@ -795,21 +795,41 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
+.experiences .icon-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+
+  height: 100px; 
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.services .icon-box .icon {
-  margin: 0 auto;
+.experiences .icon-box .icon {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px
   width: 100px;
-  height: 100px;
-  display: flex;
+  align-self: center;
   align-items: center;
   justify-content: center;
+
+  height: 100px;
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
   transition: ease-in-out 0.3s;
   position: relative;
 }
@@ -817,11 +837,11 @@ section {
 .services .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
-  position: relative;
+  position: absolute;
 }
 
 .services .icon-box .icon svg {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -833,7 +853,8 @@ section {
 
 .services .icon-box h4 {
   font-weight: 600;
-  margin: 10px 0 15px 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 22px;
 }
 
