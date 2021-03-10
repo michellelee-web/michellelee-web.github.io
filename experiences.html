@@ -23,6 +23,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -127,31 +129,29 @@
       <div class="work-experience-description">
         <h4 style="color:#1d685f;">Co-op Term 1 - University of Waterloo, Dept. of Psychology: Face Processing and Social Cognition Lab</h4>
         <br>
-          <div class="image-blurred-edge"></div>
-        <figure>
-          <img src="assets/img/EEG.jpg" alt='missing' style="float: left;padding-right: 30px;padding-bottom: 10px; width: 210px; height: 260px;">
-          		<figcaption>I participated in an EEG study - me wearing an EEG cap with electrodes and gel!</figcaption>
-        </figure>
+
+        <div class="image-blurred-edge"></div>
+        	<figure class="figure">
+          		<img src="assets/img/EEG.jpg" alt='missing' style="float: left;padding-right: 30px;padding-bottom: 10px; width: 210px; height: 260px;">
+          		<figcaption class="figcaption" style="padding-right: 30px;">Wearing an EEG cap with electrodes and gel to participate in an EEG study!</figcaption>
+        	</figure>
 
         <p style="text-align: justify;margin-left: 5%;">For my first co-op term, I reached out to a Psychology professor whom I had built a rapport with after taking her class. I was hired as a summer <b>research assistant</b> to assist the graduate students with their research studies in a cognitive neuroscience lab.</p>
         <p style="text-align: justify;margin-left: 5%;">At first, my responsibilities involved going through recorded videos of previous studies and using software to pinpoint the ROIs (regions of interest) on the researcher's face; these areas include the eyes, nose, mouth, face, and background. In an ongoing research study, the graduate student had individuals with autism participate while wearing eye-tracking technology to detect where they were looking. Researchers hypothesized that people with autism tended to make less eye contact when interacting with others. Once I added the different ROIs to the video, the software would be able to detect where the participant fixated and for how many times.</p>
-       
-        <div class="figure">
-          <figure data-uk-lightbox="animation: slide">
-        	<a class="uk-inline" href="assets/img/Hudson-LOVE-2019.jpg" caption="Research Study Poster presented at the LOVE conference in 2019.">
-        		<img src="assets/img/Hudson-LOVE-2019.jpg" alt="Research Study Poster presented at the LOVE conference in 2019." style="float: right;padding-top: 10px; padding-left: 30px;" width="25%" height="25%">
-               		<span data-uk-overlay-icon="" class="uk-icon uk-overlay-icon">
-               			<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" data-svg="overlay-icon">
-               				<rect x="19" y="0" width="1" height="40"></rect>
-               				<rect x="0" y="19" width="40" height="1"></rect>
-               			</svg>
-               		</span>
-    		</a>
-    			<figcaption data-uk-grid="" class="uk-flex-left uk-grid uk-grid-stack">
-    				<span class="uk-width-auto uk-first-column">Research Study Poster presented at the LOVE conference in 2019.</span>
-    			</figcaption>
-    	  </figure>
-        </div>
+
+        <div class="container-image">
+        	<div class="image-blurred-edge2"></div>
+        	    <figure class="figure2">
+      				<a class="image" href="assets/img/Hudson-LOVE-2019.jpg" data-lightbox="example-1" data-title="Research Study Poster presented at the LOVE conference in 2019.">
+      					<img class="image" src="assets/img/Hudson-LOVE-2019.jpg" alt="image-1" style="float: right;padding-top: 10px;padding-left: 30px;padding-bottom: 10px;" width="30%" height="30%" />
+      					<div class="middle">
+      						<div class="text"><b>Click to enlarge image!</b></div>
+      					</div>
+      				</a>
+      			</figure>
+	    </div>
+	    <figcaption style="float: right;">Research Study Poster presented at the LOVE conference in 2019.</figcaption>
+
 
         <p style="text-align: justify;">The bulk of my work term consisted of running EEG data through a pipeline on MATLAB. This data was from a previous study where the participants' brain responses were recorded. The participants were shown happy faces, angry faces, and faces with no expression (neutral) while completing certain tasks (i.e. identify gender, emotion, etc.). The results of this study demonstrated faster reaction times for faces that were angry and thus, a sensitivity to threat (or perceived threat) in the environment. I fixed a lot of bugs and technical errors along the way and amended the pipeline for future use. I also created a manual containing my process and instructions for future research assistants or any lab member who was interested. After successfully running all the data through the pipeline, I used EEGLAB to manually pick out and remove brain data that had been disrupted by noise or the surrounding environment. Finally, I used SPSS to analyze and interpret the findings before discussing them with my supervisor.</p>
         <p style="text-align: justify;">Some other responsibilities I was tasked with was helping graduate students run their studies. In one study, I ran participants through a 1.5 hour study using eye-tracking technology. In this study, we told participants they would be shown a series of faces and then tested on their memory of them after. The purpose of this study was to observe where on the face the participants focused on while trying to "encode" the faces for a later recognition test. I would also assist other graduate students set up and apply an EEG cap to participants using electrodes and gel on an ad hoc basis.</p>
@@ -288,6 +288,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
 
 </body>
 
